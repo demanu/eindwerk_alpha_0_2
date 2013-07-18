@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Room:</b>
+  <%= @library.room %>
+</p>
+
+<p>
+  <b>Campus detail:</b>
+  <%= @library.campus_detail_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_library_path(@library) %> |
+<%= link_to 'Back', libraries_path %>

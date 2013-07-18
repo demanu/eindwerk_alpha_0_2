@@ -1,4 +1,40 @@
 EindwerkAlpha02::Application.routes.draw do
+  resources :bookworks
+
+
+  resources :loans
+
+
+  resources :reservations
+
+
+  resources :users
+
+
+  resources :bookstores
+
+
+  resources :libraries
+
+
+  resources :campus_details
+
+
+  resources :book_editions
+
+
+  resources :publishers
+
+
+  resources :participants
+
+
+  resources :author_roles
+
+
+  resources :authors
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

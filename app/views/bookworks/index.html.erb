@@ -1,0 +1,41 @@
+<h1>Listing bookworks</h1>
+
+<table>
+  <tr>
+    <th>Tittle</th>
+    <th>Language</th>
+    <th>Archived</th>
+    <th>Lendable</th>
+    <th>Backorder</th>
+    <th>Loancount</th>
+    <th>Copies</th>
+    <th>Library</th>
+    <th>Bookstore</th>
+    <th>Summary</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @bookworks.each do |bookwork| %>
+  <tr>
+    <td><%= bookwork.tittle %></td>
+    <td><%= bookwork.language %></td>
+    <td><%= bookwork.archived %></td>
+    <td><%= bookwork.lendable %></td>
+    <td><%= bookwork.backorder %></td>
+    <td><%= bookwork.loancount %></td>
+    <td><%= bookwork.copies %></td>
+    <td><%= bookwork.library_id %></td>
+    <td><%= bookwork.bookstore_id %></td>
+    <td><%= bookwork.summary %></td>
+    <td><%= link_to 'Show', bookwork %></td>
+    <td><%= link_to 'Edit', edit_bookwork_path(bookwork) %></td>
+    <td><%= link_to 'Destroy', bookwork, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Bookwork', new_bookwork_path %>

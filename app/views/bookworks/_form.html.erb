@@ -1,0 +1,18 @@
+<%= semantic_form_for @bookwork do |f| %>
+  <%= f.inputs do %>
+    <%= f.input :tittle %>
+    <%= f.input :language %>
+    <%= f.input :archived %>
+    <%= f.input :lendable %>
+    <%= f.input :backorder %>
+    <%= f.input :loancount %>
+    <%= f.input :copies %>
+    <%= f.input :library_id %>
+    <%= f.input :bookstore_id %>
+    <%= f.input :summary %>
+  <% end %>
+
+  <%= f.actions do %>
+    <%= f.action :submit, :as => :input %>
+  <% end %>
+<% end %>

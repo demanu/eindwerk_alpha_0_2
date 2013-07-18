@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Tittle:</b>
+  <%= @bookwork.tittle %>
+</p>
+
+<p>
+  <b>Language:</b>
+  <%= @bookwork.language %>
+</p>
+
+<p>
+  <b>Archived:</b>
+  <%= @bookwork.archived %>
+</p>
+
+<p>
+  <b>Lendable:</b>
+  <%= @bookwork.lendable %>
+</p>
+
+<p>
+  <b>Backorder:</b>
+  <%= @bookwork.backorder %>
+</p>
+
+<p>
+  <b>Loancount:</b>
+  <%= @bookwork.loancount %>
+</p>
+
+<p>
+  <b>Copies:</b>
+  <%= @bookwork.copies %>
+</p>
+
+<p>
+  <b>Library:</b>
+  <%= @bookwork.library_id %>
+</p>
+
+<p>
+  <b>Bookstore:</b>
+  <%= @bookwork.bookstore_id %>
+</p>
+
+<p>
+  <b>Summary:</b>
+  <%= @bookwork.summary %>
+</p>
+
+
+<%= link_to 'Edit', edit_bookwork_path(@bookwork) %> |
+<%= link_to 'Back', bookworks_path %>
