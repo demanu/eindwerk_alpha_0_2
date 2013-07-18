@@ -5,7 +5,7 @@ class Bookwork < ActiveRecord::Base
   has_many :reservations
   belongs_to :loan
   belongs_to :bookstore
-  has_one :library
+  belongs_to :library
   has_many :book_editions
   has_many :participants
 end

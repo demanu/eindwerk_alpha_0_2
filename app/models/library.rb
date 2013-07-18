@@ -3,4 +3,5 @@ class Library < ActiveRecord::Base
 
   #relations
   belongs_to :campus_detail
+  has_many :bookworks
 end

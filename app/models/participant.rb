@@ -3,4 +3,6 @@ class Participant < ActiveRecord::Base
 
   #relations
   belongs_to :bookwork
+  has_many :authors
+  has_many :author_roles
 end

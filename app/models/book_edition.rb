@@ -3,4 +3,5 @@ class BookEdition < ActiveRecord::Base
 
   #relations
   belongs_to :publisher
+  belongs_to :bookwork
 end

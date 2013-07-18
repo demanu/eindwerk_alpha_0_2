@@ -3,4 +3,5 @@ class Reservation < ActiveRecord::Base
 
   #relations
   belongs_to :bookwork
+  belongs_to :user
 end
